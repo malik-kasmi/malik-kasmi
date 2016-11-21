@@ -1,5 +1,15 @@
 <h1>CoachingController#answer</h1>
 <p>Find me in app/views/coaching_controller/answer.html.erb</p>
 
-<p>The question was: <%= @question %> </p>
-<p>And the answer of he coach is: <%= @answer_to_display %> </p>
+
+<blockquote class="blockquote">
+  <p class="mb-0"><%= @question %></p>
+  <footer class="blockquote-footer"> You </footer>
+</blockquote>
+
+<blockquote class="blockquote">
+  <p class="mb-0"> <%= @answer_to_display %> </p>
+  <footer class="blockquote-footer"> Your coach </footer>
+</blockquote>
+
+<p> <%= link_to "Return", ask_path %> </p>
